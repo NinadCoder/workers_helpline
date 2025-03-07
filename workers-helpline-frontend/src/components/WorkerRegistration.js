@@ -3,10 +3,10 @@ import axios from 'axios';
 
 const WorkerRegistration = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    skills: '',
-    experience: '',
-    location: ''
+    name: 'Alice',
+    skills: 'Carpentry',
+    experience: '2 years',
+    location: 'Mumbai'
   });
 
   const handleChange = (e) => {
