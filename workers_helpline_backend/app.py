@@ -21,6 +21,10 @@ def generate_jwt(user_id):
     }, app.config['SECRET_KEY'], algorithm='HS256')
     return token
 
+@app.route('/')
+def home():
+    return "Welcome to the Workers Helpline API!"
+
 # 1. Worker Registration (POST)
 @app.route('/api/worker/register', methods=['POST'])
 def worker_register():
